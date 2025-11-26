@@ -146,14 +146,3 @@ ray.init(num_cpus=4)
 - [Ray GitHub](https://github.com/ray-project/ray)
 - [Ray Tutorial](https://docs.ray.io/en/latest/ray-core/walkthrough.html)
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📄 License
-
-MIT License
-
----
-
-Made with ❤️ using Ray Framework
