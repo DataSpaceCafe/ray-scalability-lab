@@ -2,9 +2,11 @@ import ray
 import time
 from tqdm import tqdm
 
-ray.init(ignore_reinit_error=True)
+# Set the number of CPU cores to use
+ray.init(num_cpus=4, ignore_reinit_error=True)
 
-@ray.remote
+# Each task uses 1 CPU (limits concurrent tasks to 4)
+@ray.remote(num_cpus=1)
 def heavy_task(x):
     time.sleep(0.1)
     return x ** 2
